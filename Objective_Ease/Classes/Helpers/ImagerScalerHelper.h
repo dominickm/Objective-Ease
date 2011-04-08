@@ -10,7 +10,9 @@
 
 @interface UIImage (scaler) 
 
+- (UIImage *) croppedToRect:(CGRect)rect;
 - (UIImage *) scaleToSize:(UIImage *)originalImage MaxWidth:(float)maxWidth MaxHeight:(float)maxHeight;
+- (UIImage *) imageScaledAndCroppedToMaxSize: (CGSize) maxSize;
 
 
 @end
