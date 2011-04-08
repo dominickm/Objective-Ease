@@ -16,6 +16,9 @@
 		4C3DCBF4134EA3EA00814307 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DCBF2134EA3EA00814307 /* MainWindow.xib */; };
 		4C3DCBF7134EA3EA00814307 /* Objective_EaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DCBF6134EA3EA00814307 /* Objective_EaseViewController.m */; };
 		4C3DCBFA134EA3EA00814307 /* Objective_EaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DCBF8134EA3EA00814307 /* Objective_EaseViewController.xib */; };
+		4C3DCC04134EA44900814307 /* ImagerScalerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DCC03134EA44900814307 /* ImagerScalerHelper.m */; };
+		4C3DCC10134EA9AC00814307 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DCC0F134EA9AC00814307 /* QuartzCore.framework */; };
+		4C3DCC12134EA9B400814307 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DCC11134EA9B400814307 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +26,20 @@
 		4C3DCBE0134EA3EA00814307 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C3DCBE2134EA3EA00814307 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C3DCBE4134EA3EA00814307 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4C3DCBE8134EA3EA00814307 /* Objective_Ease-Info.plist */ = {isa = PBXFileReference; path = "Objective_Ease-Info.plist"; sourceTree = "<group>"; };
+		4C3DCBE8134EA3EA00814307 /* Objective_Ease-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Objective_Ease-Info.plist"; sourceTree = "<group>"; };
 		4C3DCBEA134EA3EA00814307 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C3DCBEC134EA3EA00814307 /* Objective_Ease-Prefix.pch */ = {isa = PBXFileReference; path = "Objective_Ease-Prefix.pch"; sourceTree = "<group>"; };
+		4C3DCBEC134EA3EA00814307 /* Objective_Ease-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective_Ease-Prefix.pch"; sourceTree = "<group>"; };
 		4C3DCBED134EA3EA00814307 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C3DCBEF134EA3EA00814307 /* Objective_EaseAppDelegate.h */ = {isa = PBXFileReference; path = Objective_EaseAppDelegate.h; sourceTree = "<group>"; };
+		4C3DCBEF134EA3EA00814307 /* Objective_EaseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objective_EaseAppDelegate.h; sourceTree = "<group>"; };
 		4C3DCBF0134EA3EA00814307 /* Objective_EaseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objective_EaseAppDelegate.m; sourceTree = "<group>"; };
 		4C3DCBF3134EA3EA00814307 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4C3DCBF5134EA3EA00814307 /* Objective_EaseViewController.h */ = {isa = PBXFileReference; path = Objective_EaseViewController.h; sourceTree = "<group>"; };
+		4C3DCBF5134EA3EA00814307 /* Objective_EaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Objective_EaseViewController.h; sourceTree = "<group>"; };
 		4C3DCBF6134EA3EA00814307 /* Objective_EaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objective_EaseViewController.m; sourceTree = "<group>"; };
 		4C3DCBF9134EA3EA00814307 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Objective_EaseViewController.xib; sourceTree = "<group>"; };
+		4C3DCC02134EA44900814307 /* ImagerScalerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagerScalerHelper.h; sourceTree = "<group>"; };
+		4C3DCC03134EA44900814307 /* ImagerScalerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagerScalerHelper.m; sourceTree = "<group>"; };
+		4C3DCC0F134EA9AC00814307 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4C3DCC11134EA9B400814307 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3DCC12134EA9B400814307 /* OpenGLES.framework in Frameworks */,
+				4C3DCC10134EA9AC00814307 /* QuartzCore.framework in Frameworks */,
 				4C3DCBE1134EA3EA00814307 /* UIKit.framework in Frameworks */,
 				4C3DCBE3134EA3EA00814307 /* Foundation.framework in Frameworks */,
 				4C3DCBE5134EA3EA00814307 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +78,8 @@
 		4C3DCBDF134EA3EA00814307 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C3DCC0F134EA9AC00814307 /* QuartzCore.framework */,
+				4C3DCC11134EA9B400814307 /* OpenGLES.framework */,
 				4C3DCBE0134EA3EA00814307 /* UIKit.framework */,
 				4C3DCBE2134EA3EA00814307 /* Foundation.framework */,
 				4C3DCBE4134EA3EA00814307 /* CoreGraphics.framework */,
@@ -84,6 +95,7 @@
 				4C3DCBF2134EA3EA00814307 /* MainWindow.xib */,
 				4C3DCBF5134EA3EA00814307 /* Objective_EaseViewController.h */,
 				4C3DCBF6134EA3EA00814307 /* Objective_EaseViewController.m */,
+				4C3DCC00134EA42E00814307 /* Classes */,
 				4C3DCBF8134EA3EA00814307 /* Objective_EaseViewController.xib */,
 				4C3DCBE7134EA3EA00814307 /* Supporting Files */,
 			);
@@ -99,6 +111,23 @@
 				4C3DCBED134EA3EA00814307 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C3DCC00134EA42E00814307 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C3DCC01134EA42E00814307 /* Helpers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4C3DCC01134EA42E00814307 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4C3DCC02134EA44900814307 /* ImagerScalerHelper.h */,
+				4C3DCC03134EA44900814307 /* ImagerScalerHelper.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +193,7 @@
 				4C3DCBEE134EA3EA00814307 /* main.m in Sources */,
 				4C3DCBF1134EA3EA00814307 /* Objective_EaseAppDelegate.m in Sources */,
 				4C3DCBF7134EA3EA00814307 /* Objective_EaseViewController.m in Sources */,
+				4C3DCC04134EA44900814307 /* ImagerScalerHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
