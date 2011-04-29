@@ -35,4 +35,30 @@
     
 }
 
+- (UIImage *) imageCroppedToRect: (CGRect) rect {
+    UIGraphicsBeginImageContext(CGSizeMake(rect.size.width, rect.size.height));
+    [self drawInRect:CGRectMake(-rect.origin.x, -rect.origin.y, self.size.width, self.size.height)];
+    UIImage *resultingImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultingImage;
+}
+
+- (UIImage *) imageScaledAndCroppedToMaxSize: (CGSize) maxSize {
+    float horizontalFactor = self.size.width / maxSize.width;
+    float verticalFactor = self.size.height / maxSize.height;
+    float conversionFactor = MIN(horizontalFactor, verticalFactor);
+    
+    float newWidth = self.size.width / conversionFactor;
+    float newHeight = self.size.height / conversionFactor;
+    
+    float offsetLeft = (maxSize.width - newWidth) / 2;
+    float offsetUpper = (maxSize.height - newHeight) / 2;
+    
+    UIGraphicsBeginImageContext(maxSize);
+    [self drawInRect: CGRectMake(offsetLeft, offsetUpper , newWidth , newHeight)];
+    UIImage *resultingImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultingImage;
+}
+
 @end
