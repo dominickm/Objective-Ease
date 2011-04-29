@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C3A2AB0136B29070068A294 /* EZButon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A2AAF136B29070068A294 /* EZButon.m */; };
+		4C3A2AB3136B328C0068A294 /* EZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A2AB2136B328C0068A294 /* EZProgressView.m */; };
+		4C3A2AB6136B32EE0068A294 /* drawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A2AB5136B32EE0068A294 /* drawing.m */; };
 		4C3DCBE1134EA3EA00814307 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DCBE0134EA3EA00814307 /* UIKit.framework */; };
 		4C3DCBE3134EA3EA00814307 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DCBE2134EA3EA00814307 /* Foundation.framework */; };
 		4C3DCBE5134EA3EA00814307 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DCBE4134EA3EA00814307 /* CoreGraphics.framework */; };
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		4C3A2AAE136B29070068A294 /* EZButon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZButon.h; sourceTree = "<group>"; };
 		4C3A2AAF136B29070068A294 /* EZButon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZButon.m; sourceTree = "<group>"; };
+		4C3A2AB1136B328C0068A294 /* EZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZProgressView.h; sourceTree = "<group>"; };
+		4C3A2AB2136B328C0068A294 /* EZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZProgressView.m; sourceTree = "<group>"; };
+		4C3A2AB5136B32EE0068A294 /* drawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawing.m; sourceTree = "<group>"; };
 		4C3DCBDC134EA3EA00814307 /* Objective_Ease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Objective_Ease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3DCBE0134EA3EA00814307 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C3DCBE2134EA3EA00814307 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,10 +69,20 @@
 		4C3A2AAD136B28E90068A294 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				4C3A2AB1136B328C0068A294 /* EZProgressView.h */,
+				4C3A2AB2136B328C0068A294 /* EZProgressView.m */,
 				4C3A2AAE136B29070068A294 /* EZButon.h */,
 				4C3A2AAF136B29070068A294 /* EZButon.m */,
 			);
 			path = UIElements;
+			sourceTree = "<group>";
+		};
+		4C3A2AB4136B32EE0068A294 /* External_Requirments */ = {
+			isa = PBXGroup;
+			children = (
+				4C3A2AB5136B32EE0068A294 /* drawing.m */,
+			);
+			path = External_Requirments;
 			sourceTree = "<group>";
 		};
 		4C3DCBD1134EA3EA00814307 = {
@@ -128,6 +143,7 @@
 		4C3DCC00134EA42E00814307 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4C3A2AB4136B32EE0068A294 /* External_Requirments */,
 				4C3A2AAD136B28E90068A294 /* UIElements */,
 				4C3DCC01134EA42E00814307 /* Helpers */,
 			);
@@ -208,6 +224,8 @@
 				4C3DCBF7134EA3EA00814307 /* Objective_EaseViewController.m in Sources */,
 				4C3DCC04134EA44900814307 /* ImagerScalerHelper.m in Sources */,
 				4C3A2AB0136B29070068A294 /* EZButon.m in Sources */,
+				4C3A2AB3136B328C0068A294 /* EZProgressView.m in Sources */,
+				4C3A2AB6136B32EE0068A294 /* drawing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
