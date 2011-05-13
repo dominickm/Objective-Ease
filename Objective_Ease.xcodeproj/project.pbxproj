@@ -20,6 +20,7 @@
 		4C3DCC04134EA44900814307 /* ImagerScalerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DCC03134EA44900814307 /* ImagerScalerHelper.m */; };
 		4C3DCC10134EA9AC00814307 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DCC0F134EA9AC00814307 /* QuartzCore.framework */; };
 		4C3DCC12134EA9B400814307 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DCC11134EA9B400814307 /* OpenGLES.framework */; };
+		4CA9FA3A137CA6D20097E224 /* EZUnitConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9FA39137CA6D20097E224 /* EZUnitConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		4C3DCC03134EA44900814307 /* ImagerScalerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagerScalerHelper.m; sourceTree = "<group>"; };
 		4C3DCC0F134EA9AC00814307 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4C3DCC11134EA9B400814307 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4CA9FA38137CA6D20097E224 /* EZUnitConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZUnitConverter.h; sourceTree = "<group>"; };
+		4CA9FA39137CA6D20097E224 /* EZUnitConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZUnitConverter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 			children = (
 				4C3DCC02134EA44900814307 /* ImagerScalerHelper.h */,
 				4C3DCC03134EA44900814307 /* ImagerScalerHelper.m */,
+				4CA9FA38137CA6D20097E224 /* EZUnitConverter.h */,
+				4CA9FA39137CA6D20097E224 /* EZUnitConverter.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				4C3DCBF7134EA3EA00814307 /* Objective_EaseViewController.m in Sources */,
 				4C3DCC04134EA44900814307 /* ImagerScalerHelper.m in Sources */,
 				4C3A2AB0136B29070068A294 /* EZButon.m in Sources */,
+				4CA9FA3A137CA6D20097E224 /* EZUnitConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
