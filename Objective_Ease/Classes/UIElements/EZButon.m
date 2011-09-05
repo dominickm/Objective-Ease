@@ -11,15 +11,11 @@
 
 @implementation EZButon
 
-@synthesize buttonColor, buttonSize, buttonText, buttonType;
+@synthesize buttonColor, buttonSize, buttonText, buttonType, shiny, shadow;
 
 
 - (void) setButtonColor:(UIColor *)color {
     self.buttonColor = color;
-}
-
-- (void) setButtonText:(NSString *)text {
-    self.buttonText = text;
 }
 
 - (void) setColor:(UIColor *)color {
@@ -31,24 +27,24 @@
     // gonna need a hex to UIColor helper for this
 }
 
-- (void) setButtonSize:(CGSize)size {
-    self.buttonSize = size;
+- (void) setShadow:(BOOL)shouldShadow {
+    if (shouldShadow) {
+        [self.layer setShadowColor:[[UIColor blackColor] CGColor]];
+        [self.layer setShadowOffset:CGSizeMake(0.0f, 2.0f)];
+        [self.layer setShadowOpacity:0.5f];
+        [self.layer setShadowRadius:2.0f]; 
+    } else {
+        [self.layer setShadowOpacity:0.0f];
+    }
 }
 
-- (void) setButtonImage:(UIImage *)image {
-    
+- (BOOL) shadow {
+    if ([self.layer shadowOpacity] > 0.01f) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
-- (void) addBackButton {
-    
-}
-
-- (void) addRightNavigationBarButton {
-    
-}
-
-- (void) addLeftNavigationBarButton {
-    
-}
 
 @end

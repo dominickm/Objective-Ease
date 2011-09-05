@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 
 
 @interface EZButon : UIButton {
@@ -20,15 +21,11 @@
 @property (nonatomic, retain) NSString *buttonText;
 @property (nonatomic, retain) UIColor *buttonColor;
 @property (nonatomic, assign) CGSize buttonSize;
+@property (nonatomic, assign) BOOL shiny;
+@property (nonatomic, assign) BOOL shadow;
 
-- (void) addBackButton;
-- (void) addRightNavigationBarButton;
-- (void) addLeftNavigationBarButton;
-- (void) setColor:(UIColor *)color;
 - (void) setColorFromHexString:(NSString *)hexString;
-- (void) setButtonImage:(UIImage *)image;
-- (void) setButtonSize:(CGSize)size;
-
+- (void) setShadow:(BOOL)shouldShadow;
 
 
 
