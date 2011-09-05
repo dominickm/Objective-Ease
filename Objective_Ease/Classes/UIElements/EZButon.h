@@ -29,7 +29,7 @@
 - (void) setColorFromHexString:(NSString *)hexString;
 - (void) setShadow:(BOOL)shouldShadow;
 - (void) setCornerRadius:(CGFloat)radius;
-
-
+- (void) setShiny:(BOOL)isShiny;
+- (void) configure;
 
 @end

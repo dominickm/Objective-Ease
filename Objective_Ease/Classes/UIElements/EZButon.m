@@ -54,6 +54,34 @@
     }
 }
 
+- (void) setShiny:(BOOL)isShiny {
+    self.shiny = isShiny;
+}
+
+- (void) configure {
+    if (normalGradient) {
+        [normalGradient removeFromSuperlayer];
+    } else if (highlightedGradient) {
+        [highlightedGradient removeFromSuperlayer];
+    } else if (disabledGradient) {
+        [disabledGradient removeFromSuperlayer];
+    } else if (selectedGradient) {
+        [selectedGradient removeFromSuperlayer];
+    }
+    [self.layer setBorderWidth:1.0f];
+    [self.layer setBorderColor:[UIColor colorWithRed:168.0f/255.0f green:171.0f/255.0f blue:173.0f/255.0f alpha:1.0f].CGColor];
+    [self.layer setCornerRadius:8.0f];
+    [self.layer setMasksToBounds:NO];
+    // [self configureGradients];
+    if (!self.enabled) {
+        [self.layer addSublayer:disabledGradient];
+    } else if (self.selected) {
+        [self.layer addSublayer:selectedGradient];
+    } else {
+        [self.layer addSublayer:normalGradient];
+    }
+}
+
 - (void) setCornerRadius:(CGFloat)radius {
     [self.layer setCornerRadius:radius];
     if (normalGradient) {
