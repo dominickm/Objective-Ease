@@ -13,19 +13,22 @@
 @interface EZButon : UIButton {
     
     CGSize buttonSize;
-    UIColor *buttonColor;
     NSString *buttonString;
     
 }
 
-@property (nonatomic, retain) NSString *buttonText;
-@property (nonatomic, retain) UIColor *buttonColor;
+@property (nonatomic, retain) NSString* buttonText;
 @property (nonatomic, assign) CGSize buttonSize;
 @property (nonatomic, assign) BOOL shiny;
 @property (nonatomic, assign) BOOL shadow;
+@property (nonatomic, retain) CAGradientLayer* normalGradient;
+@property (nonatomic, retain) CAGradientLayer* highlightedGradient;
+@property (nonatomic, retain) CAGradientLayer* disabledGradient;
+@property (nonatomic, retain) CAGradientLayer* selectedGradient;
 
 - (void) setColorFromHexString:(NSString *)hexString;
 - (void) setShadow:(BOOL)shouldShadow;
+- (void) setCornerRadius:(CGFloat)radius;
 
 
 

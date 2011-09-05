@@ -11,8 +11,16 @@
 
 @implementation EZButon
 
-@synthesize buttonColor, buttonSize, buttonText, buttonType, shiny, shadow;
+@synthesize buttonSize, buttonText, buttonType, shiny, shadow, normalGradient, highlightedGradient, disabledGradient, selectedGradient;
 
+- (void) dealloc {
+    [buttonText release];
+    [normalGradient release];
+    [highlightedGradient release];
+    [disabledGradient release];
+    [selectedGradient release];
+    [super dealloc];
+}
 
 - (void) setButtonColor:(UIColor *)color {
     self.buttonColor = color;
@@ -43,6 +51,19 @@
         return YES;
     } else {
         return NO;
+    }
+}
+
+- (void) setCornerRadius:(CGFloat)radius {
+    [self.layer setCornerRadius:radius];
+    if (normalGradient) {
+        [normalGradient setCornerRadius:radius];
+    } else if (highlightedGradient) {
+        [highlightedGradient setCornerRadius:radius];
+    } else if (disabledGradient) {
+        [disabledGradient setCornerRadius:radius];
+    } else if (selectedGradient) {
+        [selectedGradient setCornerRadius:radius];
     }
 }
 
