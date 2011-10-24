@@ -181,6 +181,9 @@
 /* Begin PBXProject section */
 		4C3DCBD3134EA3EA00814307 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 4C3DCBD6134EA3EA00814307 /* Build configuration list for PBXProject "Objective_Ease" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -296,6 +299,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Objective_Ease/Objective_Ease-Prefix.pch";
 				INFOPLIST_FILE = "Objective_Ease/Objective_Ease-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -309,6 +313,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Objective_Ease/Objective_Ease-Prefix.pch";
 				INFOPLIST_FILE = "Objective_Ease/Objective_Ease-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

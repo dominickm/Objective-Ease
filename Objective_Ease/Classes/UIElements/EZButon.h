@@ -3,7 +3,7 @@
 //  Objective_Ease
 //
 //  Created by Michael Dominick on 4/29/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Fingertip Tech, INC. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
