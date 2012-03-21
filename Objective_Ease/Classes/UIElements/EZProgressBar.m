@@ -30,9 +30,10 @@
 #pragma mark drawRect
 
 - (void) drawRect:(CGRect)rect {
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetLineWidth(context, 5);
-    CGContextSetStrokeColor(context, [self.color CGColor]); // need to allow custom colors
+ // need to allow custom colors
+}
+
+- (void) setInRect:(CGRect)someRect {
     
 }
 
