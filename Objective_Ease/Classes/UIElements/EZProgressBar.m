@@ -11,10 +11,6 @@
 @implementation EZProgressBar
 @synthesize maxValue, minValue, currentValue, color;
 
-- (void) dealloc {
-    [color release];
-    [super dealloc];
-}
 
 
 #pragma mark inits
