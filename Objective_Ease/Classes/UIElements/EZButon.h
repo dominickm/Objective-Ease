@@ -17,14 +17,14 @@
     
 }
 
-@property (nonatomic, retain) NSString* buttonText;
+@property (nonatomic) NSString* buttonText;
 @property (nonatomic, assign) CGSize buttonSize;
 @property (nonatomic, assign) BOOL shiny;
 @property (nonatomic, assign) BOOL shadow;
-@property (nonatomic, retain) CAGradientLayer* normalGradient;
-@property (nonatomic, retain) CAGradientLayer* highlightedGradient;
-@property (nonatomic, retain) CAGradientLayer* disabledGradient;
-@property (nonatomic, retain) CAGradientLayer* selectedGradient;
+@property (nonatomic) CAGradientLayer* normalGradient;
+@property (nonatomic) CAGradientLayer* highlightedGradient;
+@property (nonatomic) CAGradientLayer* disabledGradient;
+@property (nonatomic) CAGradientLayer* selectedGradient;
 
 - (void) setColorFromHexString:(NSString *)hexString;
 - (void) setShadow:(BOOL)shouldShadow;

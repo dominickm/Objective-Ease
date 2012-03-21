@@ -13,14 +13,6 @@
 
 @synthesize buttonSize, buttonText, buttonType, shiny, shadow, normalGradient, highlightedGradient, disabledGradient, selectedGradient;
 
-- (void) dealloc {
-    [buttonText release];
-    [normalGradient release];
-    [highlightedGradient release];
-    [disabledGradient release];
-    [selectedGradient release];
-    [super dealloc];
-}
 
 - (void) setButtonColor:(UIColor *)color {
     self.buttonColor = color;
