@@ -29,17 +29,17 @@
 
 - (void) setShadow:(BOOL)shouldShadow {
     if (shouldShadow) {
-        [self.layer setShadowColor:[[UIColor blackColor] CGColor]];
-        [self.layer setShadowOffset:CGSizeMake(0.0f, 2.0f)];
-        [self.layer setShadowOpacity:0.5f];
-        [self.layer setShadowRadius:2.0f]; 
+        [[self layer] setShadowColor:[[UIColor blackColor] CGColor]];
+        [[self layer] setShadowOffset:CGSizeMake(0.0f, 2.0f)];
+        [[self layer] setShadowOpacity:0.5f];
+        [[self layer] setShadowRadius:2.0f]; 
     } else {
-        [self.layer setShadowOpacity:0.0f];
+        [[self layer] setShadowOpacity:0.0f];
     }
 }
 
 - (BOOL) shadow {
-    if ([self.layer shadowOpacity] > 0.01f) {
+    if ([[self layer] shadowOpacity] > 0.01f) {
         return YES;
     } else {
         return NO;

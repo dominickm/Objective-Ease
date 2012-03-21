@@ -18,8 +18,8 @@
     
 }
 
-@property (nonatomic, retain) NSString *buttonText;
-@property (nonatomic, retain) UIColor *buttonColor;
+@property (nonatomic) NSString *buttonText;
+@property (nonatomic) UIColor *buttonColor;
 @property (nonatomic, assign) CGSize buttonSize;
 @property (nonatomic, assign) BOOL shiny;
 @property (nonatomic, assign) BOOL shadow;

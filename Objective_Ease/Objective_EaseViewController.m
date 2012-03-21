@@ -10,10 +10,6 @@
 
 @implementation Objective_EaseViewController
 
-- (void)dealloc
-{
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {

@@ -14,8 +14,8 @@
 
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet Objective_EaseViewController *viewController;
+@property (nonatomic) IBOutlet Objective_EaseViewController *viewController;
 
 @end
